@@ -1,0 +1,45 @@
+# 系统配置文件
+# 控制整个系统的基础设置
+
+system_settings:
+  # 基础设置
+  basic:
+    system_name: "星黎级AI女友"
+    version: "1.0.0"
+    language: "zh-CN"
+    timezone: "Asia/Shanghai"
+    data_retention_days: 365
+    log_level: "INFO"
+  
+  # 性能设置
+  performance:
+    max_concurrent_requests: 10
+    request_timeout_seconds: 30
+    image_processing_timeout: 60
+    max_message_length: 2000
+    rate_limit_per_minute: 30
+  
+  # 安全设置
+  security:
+    enable_content_filter: true
+    max_file_size_mb: 10
+    allowed_file_types:
+      - "image/jpeg"
+      - "image/png"
+      - "image/gif"
+      - "image/webp"
+    block_external_links: false
+  
+  # 资源管理
+  resources:
+    auto_backup_interval_hours: 24
+    max_log_files: 30
+    max_backup_files: 10
+    cleanup_interval_hours: 6
+  
+  # 开发者设置
+  developer:
+    debug_mode: false
+    enable_metrics: true
+    log_api_calls: false
+    enable_profiling: false
